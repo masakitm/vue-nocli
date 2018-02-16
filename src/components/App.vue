@@ -1,6 +1,6 @@
 <template>
   <div class="text">
-    Vue.js without vue-cli
+    Vue.js without vue-cli 
   </div>
 </template>
 

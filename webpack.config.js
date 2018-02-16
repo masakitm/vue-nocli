@@ -1,6 +1,8 @@
 // webpack.config.js
+const path = require('path');
+
 module.exports = {
-  entry: './src/index.js',
+  entry: ['babel-polyfill', path.resolve('src', 'index.js')],
   output: {
     filename: 'bundle.js',
     path: `${__dirname}/dest`,
