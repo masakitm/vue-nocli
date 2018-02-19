@@ -16,9 +16,15 @@ $ git init
 $ npm init
 
 $ touch .gitignore
+$ touch .editorconfig
 ```
 
-.gitignore に node_modules 追加
+```
+.gitignore に下記を追加
+node_modules
+dest
+.ds_store
+```
 
 ### webpack のインストール
 
