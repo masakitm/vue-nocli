@@ -5,7 +5,7 @@ https://log.pocka.io/posts/vue-webpack-tutorial
 https://qiita.com/kurosame/items/0434d81bdcd97eb0da19  
 https://github.com/nabepon/frontend/tree/env-setup-tutorial  
 https://qiita.com/zprodev/items/9d611a482715fa64512b  
-上記 URL からかなり引用させてもらいました。感謝！
+上記 URL からほとんど引用させてもらいました。感謝…！
 
 ## 環境構築
 
@@ -16,7 +16,6 @@ $ git init
 $ npm init
 
 $ touch .gitignore
-# .gitignoreにnode_modules追加
 ```
 
 .gitignore に node_modules 追加
