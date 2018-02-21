@@ -88,7 +88,7 @@ touch dest/index.html
 # vueまわりのインストール
 $ yarn add vue
 $ yarn add --dev vue-loader vue-template-compiler css-loader
-$ yarn add --dev babel-loader babel babel-core babel-preset-env
+$ yarn add --dev babel-loader babel babel-core babel-preset-env babel-preset-stage-2
 $ yarn add --dev sass-loader node-sass
 $ yarn add babel-polyfill # このパッケージのみ --dev は不要
 ```
@@ -137,18 +137,14 @@ module.exports = {
 # .babelrc
 {
   "presets": [
-    ["env", {
-      "targets": {
-        "browsers": [
-          "last 2 versions",
-          "ie >= 9",
-          "safari >= 7",
-          "iOS 8",
-          "Android 4.1"
-        ]
+    [
+      "env",
+      {
+        "modules": false
       }
-    }],
-  ],
+    ],
+    "stage-2"
+  ]
 }
 ```
 
