@@ -150,15 +150,24 @@ module.exports = {
 
 ```
 # eslintとprettier
-$ yarn add --dev eslint-config-airbnb-base prettier eslint-config-prettier eslint-plugin-prettier
+$ yarn add --dev eslint eslint-plugin-import eslint-config-airbnb-base prettier eslint-config-prettier eslint-plugin-prettier
 ```
 
 ```
 # .eslintrc
 {
   "extends": ["airbnb-base", "prettier"],
-  "plugins": ["prettier"]
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "no-shadow": 0,
+    "no-param-reassign": 0,
+    "no-new": 0,
+    "import/extensions": 0
+  }
 }
+// Vue.js用の設定
+// $(npm bin)/eslint 'src/**/*.js' --fix でeslint起動
 ```
 
 ```
